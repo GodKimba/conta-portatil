@@ -14,28 +14,36 @@
     </header>
     <main class="document-card">
       <h1>Política de Privacidade — Conta Portátil</h1>
-      <p><strong>Última atualização:</strong> 15 de julho de 2026</p>
-      <p>Esta Política explica como a extensão Chrome <strong>Conta Portátil</strong> trata informações quando uma pessoa autorizada cria uma cópia local de dados disponíveis em uma conta WebDiet já conectada no navegador.</p>
+      <p><strong>Última atualização:</strong> 17 de agosto de 2026</p>
+      <p>Esta Política explica como a extensão Chrome <strong>Conta Portátil</strong> trata informações quando uma pessoa autorizada cria uma cópia local de dados disponíveis em uma conta WebDiet ou Dietbox já conectada no navegador.</p>
       <p>A extensão é publicada por <strong>Rafael Fadel</strong>, pessoa física, sob o nome público <strong>Conta Portátil</strong>, com declaração de não comerciante na Chrome Web Store. O contato de privacidade e suporte é <a href="mailto:rafaelfadel2@gmail.com">rafaelfadel2@gmail.com</a>.</p>
       <h2>1. Escopo e propósito</h2>
-      <p>A extensão tem um único propósito: permitir que o usuário crie, por sua própria solicitação, uma cópia local e portátil de informações de uma conta WebDiet que ele já esteja autorizado a acessar.</p>
+      <p>A extensão tem um único propósito: permitir que o usuário crie, por sua própria solicitação, uma cópia local e portátil de informações de uma conta WebDiet ou Dietbox que ele já esteja autorizado a acessar.</p>
       <p>A extensão não fornece acesso a contas, pacientes ou registros aos quais o usuário não tenha acesso na plataforma de origem. Ela não contorna login, CAPTCHA, bloqueios, paywalls, controles de acesso ou limites técnicos.</p>
       <h2>2. Informações tratadas</h2>
-      <p>O cadastro básico dos pacientes é necessário para organizar a cópia. Conforme as categorias escolhidas e o conteúdo disponível na conta, a extensão também pode tratar:</p>
+      <p>O cadastro básico dos pacientes é necessário para organizar uma cópia que os inclua. O complemento Dietbox de bibliotecas/catálogos não consulta pacientes. Conforme a origem, a seleção aplicável e o conteúdo disponível, a extensão também pode tratar:</p>
       <ul>
-      <li>nome, contato, identificadores e outros dados cadastrais de pacientes;</li>
-      <li>anamneses, prontuários e anotações de atendimento;</li>
-      <li>planos alimentares atuais, observações, substituições, receitas e alimentos efetivamente relacionados aos planos selecionados;</li>
-      <li>orientações profissionais;</li>
+      <li>nome, contato, identificadores e o cadastro completo dos pacientes;</li>
+      <li>anamneses (índice e texto completo), prontuários e anotações de atendimento;</li>
+      <li>o acompanhamento recente do paciente (diário alimentar, atividade física, peso e ingestão hídrica dos últimos dias);</li>
+      <li>todos os planos alimentares do histórico, com observações e substituições, nos métodos convencional, Equivalentes e Qualitativo;</li>
+      <li>a biblioteca de receitas: completa no WebDiet (próprias e globais da plataforma) e as receitas da conta no Dietbox;</li>
+      <li>orientações profissionais no adaptador WebDiet; no Dietbox esta versão não copia orientação alguma, porque não há endpoint de orientação comprovado, e o arquivo declara o módulo como não coletado;</li>
       <li>prescrições de suplementos e fórmulas manipuladas;</li>
       <li>avaliações antropométricas, peso e medidas corporais;</li>
+      <li>resultados de exames de laboratório (valores bioquímicos) e, quando a página autenticada do exame os vincular à avaliação, arquivos clínicos completos com tipo, tamanho, SHA-256 e bytes base64;</li>
+      <li>cálculos de gasto energético e metabolismo no adaptador WebDiet;</li>
+      <li>agendamentos vinculados aos pacientes no adaptador Dietbox;</li>
+      <li>no WebDiet, o catálogo completo de alimentos da plataforma; em ambos os adaptadores, a lista dos alimentos que a própria conta criou; no Dietbox, também os catálogos públicos TACO, IBGE, USDA e Dietbox em balde separado com proveniência por seletor;</li>
+      <li>no Dietbox, os materiais de apoio criados pela conta, com o item bruto e a classificação como texto, link ou arquivo; quando for arquivo, seus bytes são guardados em base64 com tipo, tamanho e SHA-256;</li>
+      <li>a biblioteca de modelos da conta: refeições, modelos de plano, fórmulas manipuladas, listas, produtos, textos de orientação e observação, metas, atestados, pedidos de exame, recibos e modelos de anamnese;</li>
       <li>conteúdo e metadados técnicos necessários para formar a cópia, como tipo de registro, horário, status, completude e auditoria de requests; e</li>
-      <li>identificadores transitórios da sessão WebDiet necessários para fazer requests à própria WebDiet enquanto a conta permanece conectada.</li>
+      <li>identificadores transitórios da sessão da origem necessários para fazer requests enquanto a conta permanece conectada.</li>
       </ul>
-      <p>Essas informações podem incluir dados pessoais sensíveis de saúde e conteúdo criado por profissionais autorizados na conta.</p>
-      <p>A versão pública não inclui financeiro, agenda, chat, marketing, cursos ou catálogos globais sem relação com os planos selecionados.</p>
+      <p>Essas informações podem incluir dados pessoais sensíveis de saúde — inclusive exames de laboratório — e conteúdo criado por profissionais autorizados na conta.</p>
+      <p>A extensão não inclui financeiro, chat, marketing, cursos, biblioteca de conteúdo editorial nem propriedade da plataforma. Agenda entra somente no adaptador Dietbox. Na biblioteca de modelos WebDiet, a aba geral de arquivos enviados à nuvem fica de fora; somente arquivos vinculados pelo detalhe de exame selecionado entram como anexo clínico.</p>
       <h2>3. Como as informações são obtidas e usadas</h2>
-      <p>A coleta começa somente depois de uma ação explícita do usuário, da escolha dos grupos de dados e da confirmação exibida antes do primeiro request.</p>
+      <p>A coleta começa somente depois de uma ação explícita do usuário, da escolha da origem, da seleção aplicável e da confirmação exibida antes do primeiro request. O WebDiet permite escolher módulos; o Dietbox oferece a cópia da conta inteira e um complemento explicitamente rotulado de bibliotecas/catálogos, que não lista nem detalha pacientes. Ambos exigem o mesmo consentimento visível.</p>
       <p>As informações são usadas exclusivamente para:</p>
       <ol>
       <li>ler os registros escolhidos na conta conectada;</li>
@@ -46,29 +54,33 @@
       <p>Não usamos os dados para publicidade, perfilamento, enriquecimento de bases, treinamento de modelos, análise comercial, avaliação de crédito ou qualquer finalidade não relacionada à cópia solicitada.</p>
       <h2>4. Processamento local e compartilhamento</h2>
       <p>O processamento ocorre no navegador. A extensão não envia o conteúdo exportado, dados clínicos ou o arquivo final ao publisher, a servidores próprios, analytics, anunciantes, corretores de dados ou sistemas de destino.</p>
-      <p>Durante a operação, a extensão se comunica somente com a própria WebDiet, na sessão já aberta, para obter os registros solicitados. O navegador participa do salvamento do arquivo local.</p>
+      <p>Durante a operação, a extensão se comunica com a origem escolhida. O WebDiet usa <code>pt.webdiet.com.br</code>; o Dietbox usa <code>dietbox.me</code> e seus subdomínios HTTPS, inclusive <code>api.dietbox.me</code> e <code>food.dietbox.me</code>. Para baixar o arquivo devolvido pela lista de materiais, também pode usar o host externo de entrega aprovado por casamento exato. Esse locator é aceito somente na origem ou nesse host exato, quando usa HTTPS e não contém credencial nem porta explícita; o download não recebe cookie nem Bearer e não segue redirects. A requisição inicial de identidade também recusa redirects antes de visitar o login ou o provedor de identidade. Se a sessão Dietbox expirar durante outra requisição autenticada, o redirect de login da Dietbox pode contatar o provedor de autenticação externo da Dietbox antes que a extensão classifique a perda da sessão e interrompa a operação. O navegador participa do salvamento do arquivo local.</p>
       <p>Depois do download, o arquivo fica sob controle do usuário. Se ele decidir enviar ou importar o arquivo em outro serviço, essa ação ocorre fora da extensão e fica sujeita às políticas do destino escolhido.</p>
       <p>Não vendemos dados pessoais e não permitimos leitura humana do conteúdo da cópia na operação normal do produto.</p>
       <h2>5. Sessão, senha e credenciais</h2>
-      <p>A extensão lê e usa transitoriamente, em memória, os identificadores de sessão <code>n</code> e <code>t</code> da página WebDiet já autenticada para realizar requests à própria origem.</p>
+      <p>A extensão usa transitoriamente, em memória, a sessão que a página já detém. No WebDiet isso inclui <code>n</code> e <code>t</code>. No Dietbox, o painel usa seu cookie de sessão e as APIs da própria conta usam o token que a página já mantém, quando disponível. Esse token pode estar no armazenamento local da página ou em um cookie da própria Dietbox visível ao script; em ambos os casos ele é lido apenas em memória, usado somente para autorizar as requisições da própria origem e nunca é gravado nem enviado a qualquer outro destino.</p>
       <p>A extensão:</p>
       <ul>
-      <li>não solicita nem lê a senha da conta WebDiet;</li>
-      <li>não persiste nem exporta senha, cookie, token ou os valores de sessão <code>n</code>/<code>t</code>;</li>
+      <li>não solicita nem lê a senha da conta WebDiet ou Dietbox;</li>
+      <li>não acrescenta ao arquivo senha, cookie, Bearer, CSRF, token ou os valores de sessão <code>n</code>/<code>t</code> usados para autenticar as requisições;</li>
       <li>não armazena credenciais em servidor próprio ou <code>chrome.storage</code>; e</li>
       <li>não reutiliza a sessão para finalidade diferente da cópia iniciada.</li>
       </ul>
-      <p>Se a sessão estiver ausente, expirada ou bloqueada, a operação é interrompida. O usuário deve voltar à WebDiet e se autenticar diretamente nela.</p>
+      <p>O adaptador Dietbox preserva sem filtro por nome os campos JSON devolvidos pelas rotas selecionadas. Se a própria origem devolver em uma resposta um token, cookie, URL assinada ou outro valor sensível, esse campo pode aparecer no arquivo bruto. A extensão não interpreta nem remove esses campos de resposta.</p>
+      <p>Se a sessão estiver ausente, expirada ou bloqueada, a operação é interrompida. O usuário deve voltar à plataforma de origem e se autenticar diretamente nela.</p>
       <h2>6. Retenção e exclusão</h2>
-      <p>Durante a coleta, o resultado permanece temporariamente na memória da aba WebDiet que iniciou a operação. Ao preparar e salvar o arquivo, o payload serializado também passa temporariamente pela memória da tela da extensão e por um Blob local usado pelo fluxo de download do Chrome. Ele não é gravado em <code>chrome.storage</code> nem enviado a servidor.</p>
-      <p>Fechar apenas a tela da extensão não interrompe uma cópia em andamento; reabri-la recupera o estado mantido na origem sem repetir requests. Salvar e confirmar o download, descartar, fechar ou atualizar a aba de origem encerra o estado conforme a etapa da operação.</p>
-      <p>A extensão não mantém banco próprio, sincronização em nuvem ou cópia de recuperação. O arquivo baixado permanece no dispositivo e em eventuais backups controlados pelo usuário até que ele o exclua. Desinstalar a extensão não exclui arquivos já salvos.</p>
+      <p>Durante a coleta, o resultado em andamento permanece temporariamente na memória da aba WebDiet ou Dietbox que iniciou a operação. Ao preparar e salvar o arquivo, o payload serializado também passa temporariamente pela memória da tela da extensão e por um Blob local usado pelo fluxo de download do Chrome. Ele não é enviado a servidor nem gravado em <code>chrome.storage</code>.</p>
+      <p>Para permitir a recuperação explícita depois de fechar ou reiniciar o Chrome, a extensão mantém no IndexedDB local do próprio perfil um ponto de retomada incremental. Ele pode conter dados pessoais e clínicos já copiados, separados por paciente, além de metadados de completude, versão, escopo e uma referência opaca da conta. O ponto é limitado a 100 MiB, validado antes do reuso e nunca inclui senha, cookie, token ou header de autorização acrescentado pela extensão. Ele não sincroniza com nuvem nem sai do computador.</p>
+      <p>Ao reabrir a mesma conta, a tela apenas oferece <strong>Continuar de onde parou</strong>; a retomada nunca começa automaticamente. Começar uma nova cópia, descartar o ponto, concluir a coleta ou salvar o arquivo apaga o checkpoint correspondente. Um ponto corrompido, incompatível ou de outra conta/seleção é recusado com segurança. Desinstalar a extensão remove o armazenamento da extensão, mas não exclui arquivos que o usuário já salvou.</p>
+      <p>Para reabrir a tela Dietbox sem alterar a ação confirmada, <code>chrome.storage.session</code> guarda somente a aba de origem, o <code>jobId</code> e o escopo fixo (cópia integral ou complemento sem pacientes). Esse estado não contém payload, credencial, conteúdo clínico nem identidade de paciente e é removido quando o ciclo termina.</p>
+      <p>Fechar apenas a tela da extensão não interrompe uma cópia em andamento; reabri-la recupera o estado mantido na origem sem repetir requests. Se a aba de origem ou o navegador for fechado, o item ainda incompleto pode ser repetido, mas pacientes já confirmados no checkpoint podem ser reaproveitados após nova ação explícita.</p>
+      <p>O arquivo baixado permanece no dispositivo e em eventuais backups controlados pelo usuário até que ele o exclua.</p>
       <p>Como o publisher não recebe o conteúdo, normalmente não consegue visualizar, recuperar ou excluir o arquivo local em nome do usuário.</p>
       <h2>7. Autoridade e responsabilidade do usuário</h2>
       <p>O produto é destinado a titulares da conta e profissionais ou clínicas autorizados a acessar e portar os dados selecionados. Antes da coleta, o usuário deve confirmar que possui autorização e fundamento adequado para tratar os dados, inclusive de crianças e adolescentes quando aplicável.</p>
       <p>O usuário é responsável por selecionar somente o necessário, proteger o arquivo, escolher pessoas e destinos autorizados e cumprir obrigações legais, profissionais e contratuais aplicáveis.</p>
       <h2>8. Segurança e minimização</h2>
-      <p>Aplicamos seleção por módulo, requests somente de leitura, intervalo interno de um segundo entre requests, orçamento máximo por execução, ausência de retry automático, cancelamento e interrupção diante de erros de autenticação, 401, 403, 429 ou 5xx.</p>
+      <p>Aplicamos consentimento explícito, requests somente de leitura, limites internos e interrupção segura. WebDiet permite selecionar módulos, possui retry limitado para falhas transitórias e retomada de parcial. Dietbox copia a conta inteira de forma sequencial, repete temporariamente rede/429/5xx dentro do budget, renova ou pausa autenticação e falha fechado quando uma rota obrigatória continua indisponível. 5xx persistente em detalhe opcional por paciente fica declarado na completude; 400, 404 ou 405 em rota opcional vira aviso. Nos dois adaptadores, a retomada durável reaproveita somente registros validados e exige escolha explícita. Arquivos de material que excedam o espaço restante do teto local de 100 MiB são descartados sem bytes parciais, registrados como falhos e não impedem a cópia dos demais itens.</p>
       <p>O arquivo inclui metadados de completude, auditoria sem query e verificação de integridade SHA-256. Esses controles não eliminam riscos de malware, acesso físico, backup automático ou destino inseguro. O usuário deve manter o navegador e o sistema atualizados e armazenar a cópia em local protegido.</p>
       <p>Se identificar possível incidente, interrompa o uso e escreva para o contato desta Política. Não anexe arquivo exportado, prontuário, screenshot com paciente ou credencial ao primeiro contato.</p>
       <h2>9. Direitos e contato</h2>
@@ -77,8 +89,8 @@
       <h2>10. Chrome Web Store e Uso Limitado</h2>
       <p>O tratamento é limitado ao propósito único descrito nesta Política e na listing da Chrome Web Store. Não transferimos dados para finalidades não relacionadas, publicidade personalizada ou avaliação de crédito. As práticas da extensão observam a Política de Dados de Usuário da Chrome Web Store, inclusive os requisitos de Uso Limitado.</p>
       <p>O Google pode tratar dados operacionais da instalação e da Chrome Web Store sob suas próprias políticas. Esse tratamento é realizado pelo Google e não representa telemetria adicionada pela extensão.</p>
-      <h2>11. Independência da WebDiet</h2>
-      <p>Conta Portátil é um produto independente. Não é afiliado, patrocinado, endossado nem operado pela WebDiet. “WebDiet” e outros sinais distintivos pertencem aos seus titulares e são mencionados apenas para indicar compatibilidade.</p>
+      <h2>11. Independência das plataformas</h2>
+      <p>Conta Portátil é um produto independente. Não é afiliado, patrocinado, endossado nem operado pela WebDiet ou pela Dietbox e não afirma parceria. As marcas e outros sinais distintivos pertencem aos respectivos titulares e são mencionados apenas para indicar compatibilidade.</p>
       <h2>12. Alterações</h2>
       <p>Esta Política poderá ser atualizada para refletir mudanças legais, técnicas ou funcionais. A data da versão será alterada e mudanças relevantes no tratamento serão informadas antes de entrarem em vigor, com nova confirmação quando necessário.</p>
     </main>
